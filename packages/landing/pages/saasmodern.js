@@ -28,7 +28,7 @@ export default () => {
     <ThemeProvider theme={saasModernTheme}>
       <Fragment>
         <Head>
-          <title>SaaS | A react next landing page</title>
+          <title>Qualia Investments | Where Experential meets Economics. Your smart broker</title>
           <meta name="Description" content="React next landing page" />
           <meta name="theme-color" content="#ec5555" />
           {/* Load google fonts */}

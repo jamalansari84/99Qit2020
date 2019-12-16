@@ -27,7 +27,7 @@ export default () => {
   return (
     <ThemeProvider theme={saasModernTheme}>
       <Fragment>
-        <SEO title="SaaS Modern | A react next landing page" />
+        <SEO title="Qualia Investments and Technology | Economics Meets Experential" />
 
         <ResetCSS />
         <GlobalStyle />
