@@ -47,29 +47,29 @@ const BannerSection = ({
           <Box {...contentWrapper}>
             <DiscountWrapper>
               <DiscountLabel>
-                <Text {...discountAmount} content="25% Save" />
+                <Text {...discountAmount} content="1 Month Free :% Save" />
                 <Text
                   {...discountText}
-                  content="for first month trail version"
+                  content="for first month trial version"
                 />
               </DiscountLabel>
             </DiscountWrapper>
             <Heading
               {...title}
-              content="Ultimate Platform to monitor your best workflow."
+              content="Ultimate Broker Analytics for Live Event Tix and to help manage your worrkflow."
             />
             <Text
               {...description}
-              content="For Enhanced performance we use LiteSpeed Web Server, HTTP/2, PHP7. We make your website faster, which will help you to increase search ranking!"
+              content="Home Grown by Brokers and Now Ready for the Broker Community with enhanced performance a Priority "
             />
             <Box {...buttonWrapper}>
               <a href="#1">
-                <Button {...fillButton} title="FREE TRIAL" />
+                <Button {...fillButton} title="Sign-Up" />
               </a>
               <a href="#1">
                 <Button
                   {...button}
-                  title="WATCH VIDEO"
+                  title="SEE IT IN ACTION"
                   icon={<Icon icon={ic_play_circle_filled} size={30} />}
                   iconPosition="left"
                 />

@@ -9,7 +9,10 @@ yarn
 ```
 // For starting GatsbyJs Server run
 yarn gatsby-dev
-```
+```color stuff for QIT
+```QIT_Orange: hex color #ED9811
+```SeatRelease_Bllue: hex color #1ba1fo
+
 
 GatsbyJs server will start in `localhost:8000`
 
