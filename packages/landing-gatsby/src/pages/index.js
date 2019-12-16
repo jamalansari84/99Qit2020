@@ -1,57 +1,55 @@
 import React, { Fragment } from 'react';
-import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
-import { Modal } from '@redq/reuse-modal';
-import { agencyTheme } from 'common/src/theme/agency';
-import { ResetCSS } from 'common/src/assets/css/style';
-import { GlobalStyle, AgencyWrapper } from '../containers/Agency/agency.style';
-import Navbar from '../containers/Agency/Navbar';
-import BannerSection from '../containers/Agency/BannerSection';
-import FeatureSection from '../containers/Agency/FeatureSection';
-import AboutUsSection from '../containers/Agency/AboutUsSection';
-import WorkHistory from '../containers/Agency/WorkHistory';
-import BlogSection from '../containers/Agency/BlogSection';
-import TestimonialSection from '../containers/Agency/TestimonialSection';
-import TeamSection from '../containers/Agency/TeamSection';
-import VideoSection from '../containers/Agency/VideoSection';
-import FaqSection from '../containers/Agency/FaqSection';
-import NewsletterSection from '../containers/Agency/NewsletterSection';
-import QualitySection from '../containers/Agency/QualitySection';
-import Footer from '../containers/Agency/Footer';
+import Sticky from 'react-stickynode';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
-import '@redq/reuse-modal/es/index.css';
+import { saasModernTheme } from 'common/src/theme/saasModern';
+import { ResetCSS } from 'common/src/assets/css/style';
+import {
+  GlobalStyle,
+  ContentWrapper,
+} from '../containers/SaasModern/sassModern.style';
+
+import BannerSection from '../containers/SaasModern/Banner';
+import Navbar from '../containers/SaasModern/Navbar';
+import WorkingProcessSection from '../containers/SaasModern/WorkingProcess';
+import PricingSection from '../containers/SaasModern/Pricing';
+import PartnerSection from '../containers/SaasModern/Partner';
+import FaqSection from '../containers/SaasModern/Faq';
+import TrialSection from '../containers/SaasModern/Trial';
+import InfoSection from '../containers/SaasModern/Info';
+import FeatureSection from '../containers/SaasModern/Feature';
+import UpdateScreen from '../containers/SaasModern/UpdateScreen';
+import TestimonialSection from '../containers/SaasModern/Testimonial';
+import Footer from '../containers/SaasModern/Footer';
 import SEO from '../components/seo';
 
 export default () => {
   return (
-    <ThemeProvider theme={agencyTheme}>
+    <ThemeProvider theme={saasModernTheme}>
       <Fragment>
-        <SEO title="Agency" />
-        <Modal />
+        <SEO title="SaaS Modern | A react next landing page" />
+
         <ResetCSS />
         <GlobalStyle />
-        {/* End of agency head section */}
-        {/* Start agency wrapper section */}
-        <AgencyWrapper>
+
+        <ContentWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             <DrawerProvider>
               <Navbar />
             </DrawerProvider>
           </Sticky>
           <BannerSection />
+          <WorkingProcessSection />
+          <InfoSection />
           <FeatureSection />
-          <AboutUsSection />
-          <WorkHistory />
-          <BlogSection />
-          <QualitySection />
-          <VideoSection />
+          <UpdateScreen />
+          <PricingSection />
+          <PartnerSection />
           <TestimonialSection />
-          <TeamSection />
           <FaqSection />
-          <NewsletterSection />
+          <TrialSection />
           <Footer />
-        </AgencyWrapper>
-        {/* End of agency wrapper section */}
+        </ContentWrapper>
       </Fragment>
     </ThemeProvider>
   );
