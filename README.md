@@ -1,6 +1,4 @@
-# Installation
-
-After downloading the file from Themeforest, You will find SuperProps.zip file. Then unzip the SuperProps.zip and run the following commands on SuperProps folder to get started with the project.
+# Installation After cloning the repo , You will find  the following commands useful on the QIT LP (99Qit2020) folder to get started with the project.
 
 ```
 yarn
