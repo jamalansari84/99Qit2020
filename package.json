@@ -1,9 +1,9 @@
 {
 	"name": "react-next-landing",
-	"description": "Modern Multipurpose Landing Pages Template Using React, Next, Styled Components and so on. It also support Gatsby Static site generator ",
+	"description": "Modern Multipurpose Landing Pages for QIT Using React, Next, Styled Components and so on. It also support Gatsby Static site generator ",
 	"version": "3.3.0",
 	"private": true,
-	"author": "RedQ Team",
+	"author": "jamal ansari",
 	"license": "",
 	"repository": {
 		"type": "git",
